@@ -11,7 +11,8 @@ Applied mathematics involves using mathematical tools to solve real-world proble
 * **Validation:** Collecting data through experiments to validate the model. 
 	* *Note:* If a model (like a pendulum) predicts constant motion but reality shows it slowing down, the model must be refined to include friction.
 
-![applied math diagram](image-5.png)
+![applied math diagram](image-6.png)
+
 
 ---
 
