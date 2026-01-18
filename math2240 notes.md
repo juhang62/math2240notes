@@ -82,7 +82,7 @@ When an ODE is difficult to solve analytically, we visualize it geometrically.
 
 *note:* all solutions got trapped not matter where it starts and eventually approach $y=x$. $y=x$ is both the isocline of slope 1 and the asymptotic solution  
 
-#### Linked is a way to [plot slope field using a computer](https://github.com/MathWorks-Teaching-Resources/Phase-Plane-and-Slope-Field) 
+#### [Clink here to plot slope field using a computer](https://github.com/MathWorks-Teaching-Resources/Phase-Plane-and-Slope-Field) 
 
 
 ### Existence and Uniqueness (E&U)
