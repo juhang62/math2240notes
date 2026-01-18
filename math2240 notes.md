@@ -20,7 +20,7 @@ Applied mathematics involves using mathematical tools to solve real-world proble
 
 ### Terminology & Classification
 * **ODE:** An equation involving a function and its derivatives where there is only one independent variable. 
-	* $F(x,y,y',\cdots,y^{(n)})=0$ where $x$ is the indepdent variable and $y$ is the dependent variable. The unknown is a function $y(x)$.   
+	* $F(x,y,y',\cdots,y^{(n)})=0$ where $x$ is the independent variable and $y$ is the dependent variable. The unknown is a function $y(x)$.   
 * **Variables:**
     * **Independent:** Usually time ($t$) or position ($x$).
     * **Dependent:** The variable being solved for (e.g., $y$, $x$, or $P$).
@@ -45,7 +45,7 @@ $$x(t) = A \cos(\omega t) + B \sin(\omega t)$$
 The rate of change is proportional to the current population:
 $$\frac{dP}{dt} = kP \implies P(t) = P_0 e^{kt}$$
 
-**Note**: a solution can be verified by substituting it to the ODEs and check if the equtions hold.
+**Note**: a solution can be verified by substituting it to the ODEs and check if the equations hold.
 
 ---
 
@@ -74,7 +74,7 @@ When an ODE is difficult to solve analytically, we visualize it geometrically.
 * **Integral Curve:** A curve that is tangent to the slope field everywhere; this represents a specific solution.
 * **Isoclines:** Curves where the slope $f(x, y) = m$ is constant. These are used to draw slope fields more efficiently.
 
-#### Example (Expoential growth or decay) $y' = k y$
+#### Example (Exponential growth or decay) $y' = k y$
 ![y'=y](image.png) ![y'=-y](image-1.png)
 
 #### Example (Crawfish trap) $y' = 1 + x - y$
@@ -90,7 +90,7 @@ When an ODE is difficult to solve analytically, we visualize it geometrically.
 * **The E&U Theorem:** A unique solution exists near a point $(a, b)$ if both $f(x, y)$ and $\frac{\partial f}{\partial y}$ are continuous in that region.
 	* Note: this theorem only concerns "locally" near a point  $(a, b)$. We do not know when E&U breaks. See the example below
 
- **Example:** ("finnite time blow-ups" where a solution goes to infinity in finite time) Consider 
+ **Example:** ("finite time blow-ups" where a solution goes to infinity in finite time) Consider 
  $$\frac{dy}{dt}=y^2$$
   with $y(0)=1$ 
 - separation of variable gives a solution $y=1/(1-t)$. So the solution starting from (0,1) cannot cross $t=1$ 
@@ -98,10 +98,10 @@ When an ODE is difficult to solve analytically, we visualize it geometrically.
 
 
 **Example:** (Dichotomous flower) $x y' = y-1$
-E&U theorem gurantees E&U everywhere except $x=0$. Examining $x=0$ shows that at (0,1) there many solutions whereas everywhere else on $x=0$ there is no solution. 
+E&U theorem guarantees E&U everywhere except $x=0$. Examining $x=0$ shows that at (0,1) there many solutions whereas everywhere else on $x=0$ there is no solution. 
 ![Dichotomous flower](image-4.png)
 *note:* isoclines are also solutions
 
 **Example:** (singularity due to choice of coordinates) 
 $$x+yy'=0$$
-separation of variable gives  implicit solution $x^2+y^2 = C$. E&U theorem gurantees E&U everywhere except at $y=0$. In fact, solutions do not exsit at $y=0$. However changing to polar coordinate resolve this issue. 
+separation of variable gives  implicit solution $x^2+y^2 = C$. E&U theorem guarantees E&U everywhere except at $y=0$. In fact, solutions do not exist at $y=0$. However changing to polar coordinate resolve this issue. 
