@@ -96,7 +96,7 @@ $$y(x) = x + Ce^{-x}$$
 Note that for $x\to +\infty$, $y(x)\to x$. All solutions eventually converge to this particular solution. The slope field analysis also reveal this asymptotics (see the example in the section of Geometric & Qualitative Analysis).    
 
 #### Example (cooler) $\frac{dT}{dt} = k(t)(T_e(t) - T)$
-![alt text](image-7.png)
+![alt text](image-12.png)
 Note this is again a 1st order linear equation. This equation models temperature inside a cooler, where $T_e$ is the external temperature and $k(t)>0$ is the conductance (how insulated the cooler is).  
 
 ##### Step 1: Standard Linear Form
