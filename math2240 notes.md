@@ -1,5 +1,4 @@
-# Week 1: Introduction to Applied Mathematics
-
+# Chapter 1: 
 ---
 
 ## 1. The Applied Math Modeling Cycle
