@@ -53,7 +53,7 @@ This generates successive approximations $y_1, y_2, \ldots$ to the true values $
 **Error:**
 - **Local error:** error introduced in a single step (tangent line departing from true curve).
 - **Cumulative error:** total accumulated drift from the true solution after many steps.
-- **Theorem (Error bound):** The error in Euler's method is of order $h$: $|y_n - y(x_n)| \leq Ch$ for some constant $C$. This is called 1st order accurate. Halving $h$ roughly halves the error. 
+- **Theorem (Error bound):**  Let $y_n$ be the numerical solution at n-th step by Euler's method and $y(x_n)$ be the true solution. The error in Euler's method is of order $h$: $|y_n - y(x_n)| \leq Ch$ for some constant $C$. This is called 1st order accurate. Halving $h$ roughly halves the error. 
 - **Roundoff error:** too-small $h$ means more steps, accumulating floating-point errors. There is a practical trade-off.
 
 **Improved Euler method (Heun's method):** A predictor-corrector scheme with error of order $h^2$:
@@ -65,3 +65,6 @@ $$y_{n+1} = y_n + \frac{h}{2}(k_1 + k_2) \quad \text{(corrector)}$$
 Uses the average of slopes at both endpoints of each subinterval. Error satisfies $|y_n - y(x_n)| \leq Ch^2$, so halving $h$ cuts error by a factor of 4. This is called 2nd order accurate. 
 
 **Caution:** Always validate by running with successively smaller step sizes. If results don't stabilize, the solution may have a singularity or the problem may be ill-conditioned (e.g., $dy/dx =  y^2$, $y(0) = 1$ blows up near $x \approx 1$).
+
+**Demo:** Vibe code on [Matlab Online](https://matlab.mathworks.com/)
+using a prompt like this "Write a script to compare Euler's method and Improved Euler for y' = y, y(0)=1. Reduce step size by half 5 times, store errors and compute error ratios." 
